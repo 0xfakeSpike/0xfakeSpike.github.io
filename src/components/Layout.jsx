@@ -1,8 +1,7 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './Layout.css'
 
 function Layout({ children }) {
-  const location = useLocation()
 
   return (
     <div className="layout">
@@ -10,16 +9,8 @@ function Layout({ children }) {
         <div className="container">
           <nav className="nav">
             <Link to="/" className="logo">
-              Spike
+              Homepage
             </Link>
-            <div className="nav-links">
-              <Link
-                to="/"
-                className={location.pathname === '/' ? 'active' : ''}
-              >
-                首页
-              </Link>
-            </div>
           </nav>
         </div>
       </header>
