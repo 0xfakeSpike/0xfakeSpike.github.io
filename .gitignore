@@ -1,12 +1,34 @@
-# Ignore the contents of the _site directory
-_site/
-
-# Ignore the directory for local files during development
-local/
-
-# Ignore the Gemfile that is generated
-Gemfile.lock
-
-# Ingore files created by npm
+# Dependencies
 node_modules
 package-lock.json
+yarn.lock
+
+# Build output
+dist
+.svelte-kit
+
+# Environment variables
+.env
+.env.local
+.env.production.local
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Old Jekyll files (can be removed later)
+_site/
+Gemfile.lock
